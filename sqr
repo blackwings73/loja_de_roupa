@@ -1,0 +1,63 @@
+Estrutura do Banco de Dados
+O banco de dados loja_de_roupas contém as seguintes tabelas:
+
+Tabelas:
+categorias
+
+Armazena as categorias de produtos.
+Campos:
+id_categoria: Identificador único da categoria.
+nome: Nome da categoria de produto.
+produtos
+
+Armazena informações sobre os produtos vendidos na loja.
+Campos:
+id_produto: Identificador único do produto.
+nome: Nome do produto.
+tamanho: Tamanho do produto (exemplo: P, M, G).
+cor: Cor do produto.
+preco: Preço de venda do produto.
+estoque: Quantidade disponível em estoque.
+id_categoria: Categoria à qual o produto pertence.
+id_fornecedor: Fornecedor do produto.
+clientes
+
+Armazena os dados dos clientes da loja.
+Campos:
+id_cliente: Identificador único do cliente.
+nome: Nome do cliente.
+email: Email do cliente.
+telefone: Telefone do cliente.
+endereco: Endereço do cliente.
+vendas
+
+Armazena informações sobre as vendas realizadas.
+Campos:
+id_venda: Identificador único da venda.
+data_venda: Data e hora da venda.
+valor_total: Valor total da venda.
+itensvenda
+
+Armazena os itens de cada venda (associando produtos com a venda).
+Campos:
+id_item: Identificador único do item na venda.
+id_venda: Identificador da venda.
+id_produto: Identificador do produto vendido.
+quantidade: Quantidade do produto vendido.
+preco_unitario: Preço unitário do produto na venda.
+fornecedores
+
+Armazena dados dos fornecedores da loja.
+Campos:
+id_fornecedor: Identificador único do fornecedor.
+nome: Nome do fornecedor.
+telefone: Telefone do fornecedor.
+endereco: Endereço do fornecedor.
+Como Usar
+Instalar MySQL: Certifique-se de ter o MySQL ou MariaDB instalado em seu sistema.
+
+Configurar o Banco de Dados: Execute o script SQL presente no arquivo para criar o banco de dados e as tabelas necessárias.
+
+Gerenciar o Banco de Dados: Você pode interagir com o banco de dados usando qualquer ferramenta de gerenciamento de banco de dados (como MySQL Workbench, DBeaver, etc.) ou através de comandos SQL diretamente no MySQL.
+
+Adicionar Dados: Para adicionar dados, insira registros nas tabelas categorias, produtos, clientes, fornecedores e registre vendas conforme necessário
